@@ -1,28 +1,53 @@
-const path = require('path');
-const express = require('express');
+/*===================================
+|| 
+|| NodeJS Server with Express Framework
+|| 
+===================================*/
+/*---------------------------
+| Environment Vars
+---------------------------*/
+require('dotenv').config();
 
-// Initiaize Instance of Express as app
+/*---------------------------
+| Config
+---------------------------*/
+const PORT = process.env.PORT || 5000; // fallback to 5000
+
+/*---------------------------
+| Resources
+---------------------------*/
+const path = require('path');
+// require('dotenv').config({ path: './.env.local' });
+const express = require('express');
+const bodyParser = require("body-parser"); //Only way to do POST requests
+
+/*---------------------------
+| Initiaize Instance of Express as app
+---------------------------*/
 const app = express();
 
-// POST Requests: In order to accept post requests, you must use bodyParser
-const bodyParser = require("body-parser");
+/*---------------------------
+| Set Up BodyParser for Post Requests
+---------------------------*/
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Serve the static files from the React app
+/*---------------------------
+| Serve the static files from the React app
+---------------------------*/
 app.use(express.static(path.join(__dirname, 'build')));
 
 /*---------------------------
-| !!IMPORTANT!! :: Should not be done in Production
-| Bypassing CORS so express can be on port 5000 and react can be on 3000
-| We will set up a Proxy 3000 -> 5000 at some point to bypass this for local development
-| In production you would have Express access a static build of your app - so no proxy is needed.
+| !IMPORTANT :: Should not be done in Production
+| Bypassing CORS so Node Express can be on port 5000 and react can be on 3000
 ---------------------------*/
-app.use((request, response, next) => {
-    response.header("Access-Control-Allow-Origin", "*");
-    response.header("Access-Control-Allow-Headers", "Content-Type");
-    next();
-});
+if (process.env.ENVIRONMENT === 'local') {
+    app.use((request, response, next) => {
+        response.header("Access-Control-Allow-Origin", "*");
+        response.header("Access-Control-Allow-Headers", "Content-Type");
+        next();
+    });
+}
 
 /*---------------------------
 | Route Collections
@@ -40,5 +65,4 @@ app.get('*', (req, res) => {
 });
 
 // Heroku hook to use dynamic port binding
-const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => { console.log('Server is up and listening on port:' + PORT );  });
