@@ -11,7 +11,7 @@ require('dotenv').config();
 /*---------------------------
 | Config
 ---------------------------*/
-const PORT = process.env.PORT || 5000; // fallback to 5000
+const EXPRESS_PORT = process.env.EXPRESS_PORT || 5000; // fallback to 5500
 
 /*---------------------------
 | Resources
@@ -38,8 +38,8 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'build')));
 
 /*---------------------------
-| !IMPORTANT :: Should not be done in Production
-| Bypassing CORS so Node Express can be on port 5000 and react can be on 3000
+| !IMEXPRESS_PORTANT :: Should not be done in Production
+| Bypassing CORS so Node Express can be on EXPRESS_PORT 5000 and react can be on 3000
 ---------------------------*/
 if (process.env.ENVIRONMENT === 'local') {
     app.use((request, response, next) => {
@@ -64,5 +64,5 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-// Heroku hook to use dynamic port binding
-app.listen(PORT, () => { console.log('Server is up and listening on port:' + PORT );  });
+// Heroku hook to use dynamic EXPRESS_PORT binding
+app.listen(EXPRESS_PORT, () => { console.log('Server is up and listening on EXPRESS_PORT:' + EXPRESS_PORT );  });
