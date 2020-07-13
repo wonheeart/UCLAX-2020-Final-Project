@@ -26,7 +26,7 @@ const Header = () => {
 export default Header;
 
 const HeaderStyled = styled.header`
-    background-color: black;
+    background-color: #fffffe;
     font-size: 30px;
 
 .row-container {
@@ -34,7 +34,7 @@ const HeaderStyled = styled.header`
     justify-content: center;
     }
     .logo {
-        color: gray;
+        color: #e45858;
         margin-right: 10px;
 
         svg {
@@ -46,12 +46,12 @@ const HeaderStyled = styled.header`
         h2 {
             font-size: 40px;
             margin: 0px;
-            color: white;
+            color: #2b2c34;
         }
         h3 {
             font-size: 30px;
             margin: 0px;
-            color: white;
+            color: #2b2c34;
         }
     }
 `;

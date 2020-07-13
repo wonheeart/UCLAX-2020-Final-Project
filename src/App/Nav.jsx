@@ -17,7 +17,7 @@ const Nav = () => {
 export default Nav;
 
 const NavStyled = styled.nav`
-    background-color: black;
+    background-color: #d1d1e9;
     color: white;
 
     text-align: center;
@@ -26,20 +26,20 @@ const NavStyled = styled.nav`
         display: inline-block;
 
         text-align: center;
-        line-height: 50px;
-        font-size: 20px;
-        background-color: white;
-        color: black;
+        line-height: 60px;
+        font-size: 14px;
+        background-color: #6246ea;
+        color: white;
 
         text-decoration: none;
 
-        width: 150px;
+        width: 160px;
         margin-right: 10px;
         margin-left: 10px;
         border-radius: 5px;
 
         &:hover {
-            background-color: gray;
+            background-color: #3d2e88;
         }
     }
 `;
