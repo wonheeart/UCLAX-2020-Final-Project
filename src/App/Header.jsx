@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { mq } from '../common/mediaQueries.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
     faAnchor,
@@ -26,7 +27,15 @@ const Header = () => {
 export default Header;
 
 const HeaderStyled = styled.header`
-    background-color: #fffffe;
+    background-color: #6246ea;
+
+    @media ${mq.tablet} {
+        background-color: orange;
+    }
+    @media ${mq.desktop} {
+        background-color: purple;
+    }
+
     font-size: 30px;
 
 .row-container {
@@ -46,12 +55,13 @@ const HeaderStyled = styled.header`
         h2 {
             font-size: 40px;
             margin: 0px;
-            color: #2b2c34;
+            color: whitesmoke;
         }
         h3 {
             font-size: 30px;
             margin: 0px;
-            color: #2b2c34;
+            color: whitesmoke;
         }
     }
+    
 `;

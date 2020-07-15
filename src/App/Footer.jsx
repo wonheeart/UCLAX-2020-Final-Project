@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { mq } from '../common/mediaQueries.js';
 
 const Footer = () => {
     return (
@@ -14,7 +15,15 @@ const Footer = () => {
 export default Footer;
 
 const FooterStyled = styled.footer`
-    background-color: black;
+    background-color: #6246ea;
     padding: 20px;
-    color: gray;
+    color: whitesmoke;
+
+    @media ${mq.tablet} {
+        background-color: orange;
+    }
+    @media ${mq.desktop} {
+        background-color: purple;
+    }
+
 `;
