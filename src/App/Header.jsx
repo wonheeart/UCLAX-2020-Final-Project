@@ -16,7 +16,7 @@ const Header = () => {
                     <div className="logo"><FontAwesomeIcon icon={ faAnchor } /></div>
                     <div className="text">
                         <h2>My Final Site</h2>
-                        <h3>A really Awesome Portfolio</h3>
+                        <h3>An Awesome Portfolio</h3>
                     </div>
                 </div>
             </div> 

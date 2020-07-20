@@ -1,18 +1,66 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+
 import { mq } from '../common/mediaQueries.js';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+    faBars,
+} from '@fortawesome/free-solid-svg-icons';
+
 const Nav = () => {
+
+    const [showMenu, showMenuSet ] = useState(false);
+
+    const toggleMenu = () => {
+        console.log('You clicked thehamburger', showMenu);
+        showMenuSet(!showMenu);
+    }
+
+    // useEffect is for lifecycle events, like component mounted
+    // When we pass empty [] it triggers component mounted
+    useEffect(()=>{
+        console.log('I have mounted');
+
+        const handleWindowSizeChange = () => {
+            const isItMobile = window.matchMedia(`(max-width:499px)`);
+            console.log(isItMobile.matches);
+
+            showMenuSet(!isItMobile.matches);
+        }
+
+        // On Load / Component Mounts
+        handleWindowSizeChange();
+
+        // Every time Window is resized
+        window.addEventListener('resize', handleWindowSizeChange);
+
+        // Clean Up our Listeners on dismount
+        return () => {
+            window.addEventListener('resize', handleWindowSizeChange);
+        }
+
+    }, []); // straight braces
+
     return (
         <NavStyled>
             <div className="nested-wrapper">
-                <NavLink to="/" exact>Welcome</NavLink>
-                <NavLink to="/services">Services</NavLink>
-                <NavLink to="/contact">Contact</NavLink>
-                <NavLink to="/login">Login</NavLink>
-
-            </div>
+                <div className="hamburger"
+                    onClick={ toggleMenu }
+                    >
+                        <FontAwesomeIcon icon={ faBars } />
+                    </div>
+                    {
+                        showMenu &&
+                        <div className="Links">
+                            <NavLink to="/" exact>Welcome</NavLink>
+                            <NavLink to="/services">Services</NavLink>
+                            <NavLink to="/contact">Contact</NavLink>
+                            <NavLink to="/login">Login</NavLink>
+                        </div>
+                    }
+                </div>
         </NavStyled>
     );
 }
@@ -22,9 +70,28 @@ export default Nav;
 const NavStyled = styled.nav`
     background-color: #d1d1e9;
     color: white;
-
     text-align: center;
 
+    .hamburger {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+        cursor: pointer;
+
+        svg {
+            color: whitesmoke;
+            width: 40px;
+            height: auto;
+        }
+
+        display: block;
+
+        @media ${mq.tablet} {
+            display: none;
+        }
+    }
+    
     a {
         display: inline-block;
 
