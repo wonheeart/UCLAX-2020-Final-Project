@@ -15,8 +15,8 @@ const Header = () => {
                 <div className="row-container">
                     <div className="logo"><FontAwesomeIcon icon={ faAnchor } /></div>
                     <div className="text">
-                        <h2>My Final Site</h2>
-                        <h3>An Awesome Portfolio</h3>
+                        <h2>Wonhee Lee</h2>
+                        <h3>Product Designer</h3>
                     </div>
                 </div>
             </div> 
@@ -27,13 +27,13 @@ const Header = () => {
 export default Header;
 
 const HeaderStyled = styled.header`
-    background-color: #6246ea;
+    background-color: #9696b7;
 
     @media ${mq.tablet} {
-        background-color: orange;
+        background-color: #9696b7;
     }
     @media ${mq.desktop} {
-        background-color: purple;
+        background-color: #9696b7;
     }
 
     font-size: 30px;
@@ -43,11 +43,12 @@ const HeaderStyled = styled.header`
     justify-content: center;
     }
     .logo {
-        color: #e45858;
+        color: #3d2e88;
         margin-right: 10px;
+        margin-top: 5px;
 
         svg {
-            width: 100px;
+            width: 40px;
             height: auto;
         }
     }
@@ -55,11 +56,12 @@ const HeaderStyled = styled.header`
         h2 {
             font-size: 40px;
             margin: 0px;
-            color: whitesmoke;
+            color: #3d2e88;
         }
         h3 {
             font-size: 30px;
             margin: 0px;
+            margin-left: -20px;
             color: whitesmoke;
         }
     }

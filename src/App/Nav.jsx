@@ -68,7 +68,7 @@ const Nav = () => {
 export default Nav;
 
 const NavStyled = styled.nav`
-    background-color: #d1d1e9;
+    background-color: #BDBDD7;
     color: white;
     text-align: center;
 
@@ -97,8 +97,8 @@ const NavStyled = styled.nav`
 
         text-align: center;
         font-size: 14px;
-        background-color: #6246ea;
-        color: white;
+        background-color: white;
+        color: darkgrey;
 
         text-decoration: none;
 
@@ -121,11 +121,11 @@ const NavStyled = styled.nav`
         }
 
         &:hover {
-            background-color: #3d2e88;
+            background-color: #271c5d;
         }
 
         &.active {
-            background-color: blueviolet;
+            background-color: #3d2e88;
         }
     }
 

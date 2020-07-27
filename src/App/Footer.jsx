@@ -15,15 +15,16 @@ const Footer = () => {
 export default Footer;
 
 const FooterStyled = styled.footer`
-    background-color: #6246ea;
+    background-color: #9696b7;
     padding: 20px;
     color: whitesmoke;
+    text-align: center;
 
     @media ${mq.tablet} {
-        background-color: orange;
+        background-color: #9696b7;
     }
     @media ${mq.desktop} {
-        background-color: purple;
+        background-color: #9696b7;
     }
 
 `;
