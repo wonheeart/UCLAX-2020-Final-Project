@@ -1,11 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
+import Helmet from 'react-helmet';
+
+import ServicesContainer from './Services/ServicesContainer.jsx'
 
 const Services = () => {
 
     return (
         <ServicesStyled className='Services'>
-            Services 
+            <Helmet>
+                <title>Services :: Final Proj</title>
+            </Helmet>
+            <div className="nested-wrapper">
+                <ServicesContainer />
+            </div>
         </ServicesStyled>
     );
 }
