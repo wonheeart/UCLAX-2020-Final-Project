@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import Lightbox from './Lightbox.jsx';
+import Lightbox from '../../../../common/Lightbox.jsx';
 
 const GalleryItem = ({ item }) => {
 
@@ -43,7 +43,10 @@ const GalleryItemStyled = styled.div`
     border: solid 1px black;
 
     margin: 20px;
-    img { display: block; }
+    img { 
+        display: block; 
+        // border: solid 10px purple;
+        }
 
     .category {
         position: absolute;
@@ -60,5 +63,20 @@ const GalleryItemStyled = styled.div`
         background-color: rgba(255,255,255, .5);
         padding: 10px;
         font-size: 20px;
+    }
+
+    .Lightbox {
+        img {
+            // border: solid 20px white; 
+            max-width: 100%;
+        }
+        h3 {
+            font-size: 30px;
+            margin: 0px;
+        }
+        .description {
+            color: #333;
+            background-color: gray;
+        }
     }
 `;
