@@ -28,15 +28,16 @@ const TabStyled = styled.div`
 
     width: 100px;
     line-height: 50px;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 2px 2px 0px 0px;
     text-align: center;
-    color: white;
+    color: grey;
+    cursor: pointer;
 
     margin-right: 10px;
 
-    background-color: #BDBDD7;
+    background-color: #212121;
     &.active {
-        background-color: #d1d1e9;
+        background-color: #313131;
     }
 
 `;

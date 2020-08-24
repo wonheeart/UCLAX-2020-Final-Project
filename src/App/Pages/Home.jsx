@@ -4,20 +4,21 @@ import Helmet from 'react-helmet';
 
 /* Componets ---------------------------*/
 import Tabbed from './Tabbed/Tabbed.jsx';
-import Staff from './Staff/Staff.jsx';
+// import Staff from './Staff/Staff.jsx';
+import Slideshow from './Slideshow/Slideshow.jsx';
 
 const Home = () => {
 
     return (
         <HomeStyled className='Home'>
             <Helmet>
-                <tittle>Welcome :: WL Final Project</tittle>
+                <title>Wonhee // Home</title>
             </Helmet>
+
+            <Slideshow />
+            
             <div className="nested-wrapper">
                 <Tabbed />
-            </div>
-            <div className="nested-wrapper">
-                <Staff />
             </div>
         </HomeStyled>
     );

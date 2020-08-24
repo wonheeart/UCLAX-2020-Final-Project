@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <FooterStyled>
             <div className="nested-wrapper">
-                Footer
+                ® Wonhee Lee, 2020
             </div>
             </FooterStyled>
     );
@@ -15,16 +15,16 @@ const Footer = () => {
 export default Footer;
 
 const FooterStyled = styled.footer`
-    background-color: #9696b7;
+    background-color: #313131;
     padding: 20px;
-    color: whitesmoke;
-    text-align: center;
+    color: black;
+    // text-align: center;
 
     @media ${mq.tablet} {
-        background-color: #9696b7;
+        background-color: #313131;
     }
     @media ${mq.desktop} {
-        background-color: #9696b7;
+        background-color: #313131;
     }
 
 `;

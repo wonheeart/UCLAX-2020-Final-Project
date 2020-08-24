@@ -3,17 +3,15 @@ import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom'
 
 import Home from './Pages/Home.jsx';
-import Services from './Pages/Services.jsx';
+import Work from './Pages/Work.jsx';
 import Contact from './Pages/Contact.jsx';
-import Login from './Pages/Login.jsx';
 
 const Main = () => {
     return (
         <Mainstyled>
             <Switch>
-                <Route path='/Login' component={ Login } />
                 <Route path='/Contact' component={ Contact } />
-                <Route path='/Services' component={ Services } />
+                <Route path='/Work' component={ Work } />
                 <Route path='/' component={ Home } />
             </Switch>
         </Mainstyled>
@@ -23,6 +21,7 @@ const Main = () => {
 export default Main;
 
 const Mainstyled = styled.main`
+    background-color: black;
     padding: 50px;
     
     h1 { 

@@ -54,10 +54,9 @@ const Nav = () => {
                     {
                         showMenu &&
                         <div className="Links">
-                            <NavLink to="/" exact>Welcome</NavLink>
-                            <NavLink to="/services">Services</NavLink>
+                            <NavLink to="/" exact>Home</NavLink>
+                            <NavLink to="/Work">Work</NavLink>
                             <NavLink to="/contact">Contact</NavLink>
-                            <NavLink to="/login">Login</NavLink>
                         </div>
                     }
                 </div>
@@ -68,20 +67,20 @@ const Nav = () => {
 export default Nav;
 
 const NavStyled = styled.nav`
-    background-color: #BDBDD7;
+    background-color: #212121;
     color: white;
     text-align: center;
 
     .hamburger {
         position: absolute;
-        right: 20px;
-        top: 20px;
+        right: 10px;
+        top: 7px;
 
         cursor: pointer;
 
         svg {
-            color: whitesmoke;
-            width: 40px;
+            color: black;
+            width: 20px;
             height: auto;
         }
 
@@ -96,15 +95,15 @@ const NavStyled = styled.nav`
         display: inline-block;
 
         text-align: center;
-        font-size: 14px;
-        background-color: white;
+        font-size: 16px;
+        background-color: #212121;
         color: darkgrey;
 
         text-decoration: none;
 
-        margin-bottom: 10px;
+        margin-bottom: none;
         
-        border-radius: 5px;
+        border-radius: 2px;
 
         width: 100%;
         line-height: 60px;
@@ -121,11 +120,11 @@ const NavStyled = styled.nav`
         }
 
         &:hover {
-            background-color: #271c5d;
+            background-color: #313131;
         }
 
         &.active {
-            background-color: #3d2e88;
+            background-color: black;
         }
     }
 

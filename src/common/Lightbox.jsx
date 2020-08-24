@@ -7,7 +7,7 @@ import {
     faWindowClose,
 } from '@fortawesome/free-solid-svg-icons';
 
-const Lightbox = ({hideAction, show=false, children, width=300}) => {
+const Lightbox = ({hideAction, show=false, children, width=600}) => {
 
     const handleHide = () => {
         hideAction();
@@ -39,7 +39,7 @@ const Lightbox = ({hideAction, show=false, children, width=300}) => {
 export default Lightbox;
 
 const LightboxStyled = styled.div`
-    background-color: rgba(0,0,0, .7);
+    background-color: rgba(0,0,0, .8);
     position: fixed;
     left: 0px;
     right: 0px;
@@ -51,7 +51,8 @@ const LightboxStyled = styled.div`
     .light {
         width: ${ ({lightWidth}) => lightWidth + 40 }px;
         padding: 20px;
-        background-color: #fff;
+        background-color: #313131;
+        color: grey;
 
         position: absolute;
         left: 50%;
@@ -61,8 +62,8 @@ const LightboxStyled = styled.div`
 
         .close {
             position: absolute;
-            right: 3px;
-            top: 3px;
+            right: 2px;
+            top: 2px;
 
             cursor: pointer;
         }

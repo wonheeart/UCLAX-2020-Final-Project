@@ -17,7 +17,8 @@ const Section = ({chosenTab}) => {
 export default Section;
 
 const SectionStyled = styled.div`
-    background-color: #d1d1e9;
-    color: white;
-    padding: 20px;
+    background-color: #313131;
+    color: grey;
+    padding: 10px;
+    font-size: 14px;
 `;

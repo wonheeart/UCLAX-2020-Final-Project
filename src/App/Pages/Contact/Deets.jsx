@@ -5,7 +5,7 @@ const Deets = () => {
 
     return (
         <DeetsStyled className='Deets'>
-            Deets 
+            Drop me a line!!!
         </DeetsStyled>
     );
 }
@@ -13,5 +13,6 @@ const Deets = () => {
 export default Deets;
 
 const DeetsStyled = styled.div`
-    
+color: lightgrey;
+font-size: 14px;
 `;

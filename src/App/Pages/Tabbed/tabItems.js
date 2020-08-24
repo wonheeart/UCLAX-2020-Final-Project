@@ -1,17 +1,17 @@
 export const tabItems = [
     {
-        image: '/assets/img/MissionVision/vl_01.jpg',
-        title: 'About',
-        text: '<p><b>About</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, totam. Assumenda saepe fugit qui officiis ducimus libero incidunt consequatur deleniti, iste quod velit quaerat? Reprehenderit, exercitationem sint. Illum, molestias odit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, totam. Assumenda saepe fugit qui officiis ducimus libero incidunt consequatur deleniti, iste quod velit quaerat? Reprehenderit, exercitationem sint. Illum, molestias odit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, totam. Assumenda saepe fugit qui officiis ducimus libero incidunt consequatur deleniti, iste quod velit quaerat? Reprehenderit, exercitationem sint. Illum, molestias odit!</p> <p>About Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, totam. Assumenda saepe fugit qui officiis ducimus libero incidunt consequatur deleniti, iste quod velit quaerat? Reprehenderit, exercitationem sint. Illum, molestias odit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, totam. Assumenda saepe fugit qui officiis ducimus libero incidunt consequatur deleniti, iste quod velit quaerat? Reprehenderit, exercitationem sint. Illum, molestias odit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, totam. Assumenda saepe fugit qui officiis ducimus libero incidunt consequatur deleniti, iste quod velit quaerat? Reprehenderit, exercitationem sint. Illum, molestias odit!</p>',
+        image: '/assets/img/MissionVision/UX-1.jpg',
+        title: 'UX',
+        text: '<p>Experiences take us beyond product design, into services and ecosystems that connect with people and make lives better. My approach is an integrated, specialized process that focuses on making good experiences great. </p>',
     },
     {
-        image: '/assets/img/MissionVision/vl_02.jpg',
-        title: 'Mission',
-        text: '<p><b>Mission</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, totam. Assumenda saepe fugit qui officiis ducimus libero incidunt consequatur deleniti, iste quod velit quaerat? Reprehenderit, exercitationem sint. Illum, molestias odit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, totam. Assumenda saepe fugit qui officiis ducimus libero incidunt consequatur deleniti, iste quod velit quaerat? Reprehenderit, exercitationem sint. Illum, molestias odit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, totam. Assumenda saepe fugit qui officiis ducimus libero incidunt consequatur deleniti, iste quod velit quaerat? Reprehenderit, exercitationem sint. Illum, molestias odit!</p>',
+        image: '/assets/img/MissionVision/Product-1.jpg',
+        title: 'Product',
+        text: '<p>Our products reinvent design and deliver ground-breaking user experiences. I am an expert in pushing innovation from ideation to final production and building business success. </p>',
     },
     {
-        image: '/assets/img/MissionVision/vl_03.jpg',
-        title: 'Vision',
-        text: '<p><b>Vision</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, totam. Assumenda saepe fugit qui officiis ducimus libero incidunt consequatur deleniti, iste quod velit quaerat? Reprehenderit, exercitationem sint. Illum, molestias odit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, totam. Assumenda saepe fugit qui officiis ducimus libero incidunt consequatur deleniti, iste quod velit quaerat? Reprehenderit, exercitationem sint. Illum, molestias odit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, totam. Assumenda saepe fugit qui officiis ducimus libero incidunt consequatur deleniti, iste quod velit quaerat? Reprehenderit, exercitationem sint. Illum, molestias odit!</p>',
+        image: '/assets/img/MissionVision/Video-1.jpg',
+        title: 'Brand',
+        text: '<p>I bring brands and products to life through art direction of digital media, launch and produce videos, and all forms of video, print and digital marketing collateral. </p>',
     },
 ];
