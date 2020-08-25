@@ -26,7 +26,7 @@ const Slideshow = () => {
                 autoPlay={ true }
                 infiniteLoop={ true }
                 showArrows={ true }
-                stopOnHover={ false }
+                stopOnHover={ true }
             >
                 { renderSlides() }
             </Carousel>

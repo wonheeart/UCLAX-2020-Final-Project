@@ -13,7 +13,7 @@ const Contact = () => {
     return (
         <ContactStyled className='Contact'>
             <Helmet>
-                <title>Wonhee // Contact</title>
+                <title>Wonhee Lee // Contact</title>
             </Helmet>
             <div className="nested-wrapper">
                 <div className="column column1">
@@ -36,8 +36,6 @@ const ContactStyled = styled.div`
     .Youtube {
         display: flex;
         padding: 50px;
-        align-items: center;
-        justify-content: center;
     }
     .nested-wrapper {
         display: flex;

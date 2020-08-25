@@ -9,7 +9,7 @@ const Work = () => {
     return (
         <WorkStyled className='Work'>
             <Helmet>
-                <title>Wonhee // Work</title>
+                <title>Wonhee Lee // Work</title>
             </Helmet>
             <div className="nest-wrapper">
                 <ServicesContainer />

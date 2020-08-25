@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <HomeStyled className='Home'>
             <Helmet>
-                <title>Wonhee // Home</title>
+                <title>Wonhee Lee // Home</title>
             </Helmet>
 
             <Slideshow />
